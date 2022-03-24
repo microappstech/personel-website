@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Portfolio | Hamza mouddakir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Poppins&display=swap" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a40a7e01eb.js"></script>
+   <link href="/dist/mai.css" rel="stylesheet">
+
+   <style>
+      body{
+         width: 100%;
+         overflow-x: hidden;
+      }
+      .circle{
+         position: absolute;
+         width: 500px;
+         height: 500px;
+         overflow: hidden;
+         background:rgba(170, 170, 170, 0.63);
+         border-radius: 50%;
+         top: -80px;
+         right: -80px;
+         z-index: -1;
+      }
+      .nudget{
+         position: absolute;
+         width: 70px;
+         height: 70px;
+         background:rgba(255, 127, 7, 0.856);
+         border-radius: 50%;
+         transform: translate(700%,-490%);
+         /* right: -80px; */
+         z-index: -1;
+      }
+      .second{
+         margin-top: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+      position: absolute;
+      content:"Who I'm ?";
+      color: crimson;
+      z-index: 2;
+      top: 30px;
+      left: 46%;
+      }
+      
+      .nudget:after{
+         position: absolute;
+    border-radius: 39%;
+    content: " ";
+    z-index: 1;
+    left: 34px;
+    top: -15%;
+    width: 20px;
+    height: 14px;
+    background-color: rgb(121 4 4);
+      }
+      .about{
+         position: relative;
+      }
+      .who{
+      margin-top: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+      position: absolute;
+      content:"Who I'm ?";
+      color: crimson;
+      z-index: 2;
+      top: 30px;
+      left: 46%;
+      }
+      .second::before{
+         
+      content: " ";
+      position: absolute;
+      z-index: 2;
+      width: 55%;
+      height: 2px;
+      background-color: #aaa;
+      top: 16px;
+      left: -65%;
+      }
+      .who::before{
+      content: " ";
+      position: absolute;
+      z-index: 2;
+      width: 55%;
+      height: 2px;
+      background-color: gray;
+      top: 20px;
+      left: -65%;
+      }
+   .second::after{
+      content: " ";
+      position: absolute;
+      z-index: 2;
+      width: 55%;
+      height: 2px;
+      background-color: #aaa;
+      top: 16px;
+      left: 104%;
+   }
+   .who:after{
+      content: " ";
+      position: absolute;
+      z-index: 2;
+      width: 55%;
+      height: 2px;
+      background-color: gray;
+      top: 20px;
+      left: 104%;
+   }
+
+      
+   </style>
+
+</head>
+<body class="">
+   <!-- start header section -->
+<header class="container mx-auto">
+   <nav class="m-5 justify-around">
+      <span class="text-blue-900 font-fredoka text-lg font-bold"><a href="/"><i class="fa fa-code" aria-hidden="true"></i> HAMZA MR</a></span>
+      <label for="dark">
+         <i class="toggle fa fa-bars md:hidden text-2xl text-gray-600 self-items float-right cursor-pointer"></i>
+      </label>
+      <input type="checkbox"  class="chekbox md:hidden" id="dark">
+      <ul id="menu" class="hidden text-white text-center w-1/1 justify-center space-x-5 md:flex md:text-blue-800  md:float-right md:auto">
+         <li class="p-2 cursor-pointer hover:scale-110 hover:text-blue-900">About</li>
+         <li class="p-2 cursor-pointer hover:scale-110 hover:text-blue-900">Certificates</li>
+         <li class="p-2 cursor-pointer hover:scale-110 hover:text-blue-900 ">Technologie</li>
+         <li class="p-2 cursor-pointer hover:scale-110 hover:text-blue-900 ">Projects</li>
+         <li class="p-2 cursor-pointer hover:scale-110 hover:text-blue-900 ">Services</li>
+         <li> <button class="invisible m-2 md:visible bg-blue-900 px-3 pb-1 hidden sm:block rounded-md text-white">Contact</button></li>
+         <li> <span><i class="fa fa-moon-o m-3 cursor-pointer hover:bg-gray-500 hover:scale-150 rounded-sm p-3" aria-hidden="true"></i></span></li>
+      </ul>
+   </nav>
+   <div class="landing rounded-md  m-8 md:flex md:w-full h-full">
+      <!-- <img src="https://via.placeholder.com/300/fffff" alt="" class=""> -->
+      <img src="./images/IMG_20220211_122241-removebg-preview.png" alt="" class="mt-10 m-auto w-full rounded-md md:float-right">
+      <div class="md:float-left ">
+         <h2 class="text-gray-600 pl-20 pt-10 font-semibold text-5xl">Hamza Mouddakir </h2>
+         <h1 class="pl-20 text-orange-700 font-semibold text-3xl">Developper Full Stack</h1>
+         <p class="p-10 ml-10 text-gray-600 font-extralight">Hamza Mouddakir, Et Je suis Freelancer et étudiant de developpement informatique en institue spésialisé technologie appliquée l'air el jadida. Et je maitrisé plusieur technologie : Javascript avec frame work <span class="text-orange-600 fo -semibold text-xl ">ReactJs, NodeJs</span> et Html and Css avec framework <span class="text-orange-600 font-light text-xl"> sass, bootstrap , Tailwind</span> avec technolofie et la langue C# avec framework <span class="text-orange-600 font-light text-xl">Winforms .net , Asp.net </span> et en base de données <span class="text-orange-600 font-light text-xl">Sql server , Mongodb</span> et des autres langues de programations </p>
+         <button class="bg-blue-900 text-gray-100 p-1 px-10 text-xl rounded-md ml-20 hover:scale-110"><a href="https://www.linkedin.com/in/hamza-mouddakir-b4467a1b9/" target="_blank"> Get More </a></button>
+      </div>
+   </div>
+   <div class="circle"></div>
+   <div class="nudget"></div>
+   
+</header>
+<!-- end header section -->
+<!-- start section about me -->
+   <div class="main w-full h-full p-16 bg-slate-300 pt-5 ">
+      <h1 class="text-center text-4xl text-white font-bold about">About Me
+         <span class="who">Who Is Me?</span>
+      </h1>
+      <div class="md:flex md:flex-row w-full h-full py-10 md:justify-around ">
+         <img src="./images/IMG_20220211_122707-removebg-preview (2).png" alt="" class=" mx-20 first-letter:md:ml-36">
+         <p class=" text-gray-600 md:float-right p-10">
+            <span class="text-2xl font-fredoka">Je suis Hamza, Et Je suis <span style="color: crimson;">Freelancer</span></span>
+            hamza mouddakir étudiant de developpement informatique en institue spésialisé technologie appliquée l'air el jadida. Et je suis en train de chercher un stage de fin d'études (pfe) d'une durée 1 moins à partir de 14 mars 2022
+            <button class="bg-blue-900 flex  px-10 py-3 mt-4 rounded-md  text-white hover:scale-105 transition-all">DOWNLOAD CV</button>
+        </p>
+      </div>
+   </div>
+<!-- end section about me -->
+<!-- ------------------------------- -->
+<!-- start section services -->
+   <div class="srvices w-full h-full bg-gray-500 pt-10">
+      <h1 class="text-center text-4xl text-white font-bold about ">My services
+         <span class="who">my Services</span>
+      </h1>
+
+      <div class="mt-20 p-16 md:flex">
+         <div class="card1 md:w-1/3 mb-20 bg-black h-full m-5 hover:scale-110">
+            <img src="./images/desktop.png" class=" " alt="">
+            <ul class="flex w-full justify-around text-white h-10 bg-slate-400 p-2">
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-share" aria-hidden="true"> Share</i></li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-chevron-circle-down" aria-hidden="true"> More</i></li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-thumbs-up" aria-hidden="true"> Like</i></li>
+            </ul>
+         </div>
+         <div class="card2  md:w-1/3 m-5 mb-20 bg-black h-full hover:scale-110">
+            <img src="./images/mobile.png.opdownload" class="" alt="">
+            <ul class="flex w-full justify-around text-white h-10 bg-slate-400 p-2">
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-share" aria-hidden="true"> Share</i></li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-chevron-circle-down" aria-hidden="true"> More</i></li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-thumbs-up" aria-hidden="true"> Like</i></li>
+         </div>
+         <div class="card3 md:w-1/3 m-5 mb-20 bg-black h-full hover:scale-110">
+            <img src="./images/siteweb.png" class=" " alt="">
+            <ul class="flex w-full justify-around text-white h-10 bg-slate-400 p-2">
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-share" aria-hidden="true"> Share</i>
+               </li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-chevron-circle-down" aria-hidden="true"> More</i>
+               </li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800"><i class="fa fa-thumbs-up" aria-hidden="true"> Like</i></li>
+         </div>
+      </div>
+<!--
+      <div class="mt-0 px-16 md:flex">
+         <div class="card1 md:w-1/3 mb-20 bg-black h-full m-5">
+            <img src="https://via.placeholder.com/300/000000" class=" " alt="">
+            <ul class="flex w-full justify-around text-white h-10 bg-slate-400 p-2">
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">Share</li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">More</li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">Like</li>
+            </ul>
+         </div>
+         <div class="card2  md:w-1/3 m-5 mb-20 bg-black h-full">
+            <img src="https://via.placeholder.com/300/000000" class="" alt="">
+            <ul class="flex w-full justify-around text-white h-10 bg-slate-400 p-2">
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">Share</li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">More</li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">Like</li>
+         </div>
+         <div class="card3 md:w-1/3 m-5 mb-20 bg-black h-full">
+            <img src="https://via.placeholder.com/300/000000" class=" " alt="">
+            <ul class="flex w-full justify-around text-white h-10 bg-slate-400 p-2">
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">Share</li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">More</li>
+               <li class="cursor-pointer hover:scale-125 hover:text-blue-800">Like</li>
+         </div>
+      </div>-->
+   </div>
+<!-- ends section services -->
+<!-- ------------------------------- -->
+<!-- start section skills -->
+   <div class="skills w-full p20 py-20 bg-slate-300">
+      <h1 class="text-center text-4xl text-white font-bold about ">My Skills
+         <span class="who">my Skills</span>
+      </h1>
+      <div class="flex flex-col md:flex-row mx-20">
+         <!-- resaux sociaux -->
+         <div class="hidden md:flex md:flex-col md:visible sociaux w-1/3 bg-slate-400 mt-20">
+            <h1 class="text-xl text-blue-700 text-center mt-16">My Contact Social</h1>
+            <ul class=" flex flex-col pt-10 w-full text-2xl text-center">
+               <li class="">
+                  <a href="https://www.linkedin.com/in/hamza-mouddakir-b4467a1b9/" target="_blank">
+                     <span class=""><i class="cursor-pointer hover:scale-110 transition-all duration-700 hover:bg-slate-300 fa fa-linkedin py-5 text-blue-600   font-bold w-full" ></i></span>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://github.com/microappstech" target="_blank">
+                     <i class="fa fa-github hover:scale-110 transition-all duration-700 hover:bg-slate-300 cursor-pointer text-balck-600 py-5 justify-center font-bold w-full"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://web.facebook.com/hamza.modakur" target="_blank">
+                     <i class="fa fa-facebook hover:scale-110 transition-all duration-700 hover:bg-slate-300 text-blue-600 py-5 cursor-pointer justify-end  font-bold w-full" ></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="mailto:hamzamouddakur@gmail.com" target="_blank">
+                     <i class="fa fa-envelope-o hover:scale-110 transition-all duration-700 hover:bg-slate-300 text-orange-600 font-light text-xl py-5 cursor-pointer font-bold w-full"></i>
+                  </a>
+            </li>
+            </ul>
+         </div>
+         <!-- skill -->
+         <div class="skill w-full md:w-2/3 md:ml-10 mt-20 bg-slate-500 py-5  px-10 font-poppins sc">
+            <h1 class=" pt-5 text-blue-700 text-center text-2xl">Skills</h1>
+            <ul>
+               <li class="flex flex-col">
+                  <span class="pr-16">Figma : <span class="float-right">90%</span> </span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="figma h-full bg-blue-400 transition-all duration-1000  rounded-md">
+                     </div> 
+                  </span>
+               </li>
+               <li class="flex flex-col mt-5">
+                  <span class="pr-16">Html,Css, Tailwind, Bootstrap : <span class="float-right">80%</span> </span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="html h-full transition-all duration-1000 bg-blue-400  rounded-md">
+                     </div> 
+                  </span>
+               </li>
+               <li class="flex flex-col mt-5">
+                  <span class="pr-16">Sql Server : <span class="float-right">75%</span> </span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="sql h-full bg-blue-400 transition-all duration-1000 rounded-md">
+                     </div> 
+                  </span>
+               </li>
+               <li class="flex flex-col mt-5">
+                  <span class="pr-16">Android studio: <span class="float-right">70%</span></span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="anst h-full transition-all duration-1000 bg-blue-400  rounded-md">
+                     </div> 
+                  </span>
+               </li>
+               <li class="flex flex-col mt-5">
+                  <span class="pr-16">Javascript React : <span class="float-right">70%</span></span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="js h-full transition-all duration-1000 bg-blue-400  rounded-md">
+                     </div> 
+                  </span>
+               </li>
+               <li class="flex flex-col mt-5">
+                  <span class="pr-16">Ado.Net: <span class="float-right">70%</span></span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="ado h-full transition-all duration-1000 bg-blue-400  rounded-md">
+                     </div> 
+                  </span>
+               </li>
+               
+               <li class="flex flex-col mt-5">
+                  <span class="pr-16">Asp.net: <span class="float-right">50%</span></span>
+                  <span class="h-[15px]  bg-white w-11/12 mt-2 rounded-md ">
+                     <div class="asp h-full bg-blue-400 transition-all duration-1000 rounded-md">
+                     </div> 
+                  </span>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+<!-- end section skills -->
+<!-------------------------------------->
+<!-- start section certifcate  -->
+   <div class="certificate w-full h-full bg-gray-500 pt-10">
+      <h1 class="text-center relative text-2xl font-bold mb-20">
+         My Certificates
+         <span class="second">Certificates</span>
+      </h1>
+      <div class="mt-20 p-16 md:flex ">   
+         <div class="cert1 bg-gray-300 rounded-md py-5 md:w-1/3 mb-20  h-full m-5">
+            <img src="./images/html.png" class="rounded-full flex w-56 m-auto hover:scale-110 hover:rounded-lg transition-all duration-300" alt="">
+            <h1 class="text-gray-700 text-2xl text-center m-3">Html 5</h1>
+            <p class="text-center">SQL/MYSQL partenariat avec Academy Code Shiar obtenu en 2022</p>
+         </div>
+         <div class="cert1 bg-gray-300 rounded-md py-5 md:w-1/3 mb-20  h-full m-5 ">
+            <img src="./images/sql.PNG" class="rounded-full flex w-56 m-auto hover:scale-110 hover:rounded-lg transition-all duration-300" alt="">
+            <h1 class="text-gray-700 text-2xl text-center m-3">Sql - Mysql</h1>
+            <p class="text-center">Sql - MySql partenariat avec Academy Code Shiar en 2022</p>
+         </div>
+         <div class="cert1 bg-gray-300 rounded-md py-5 md:w-1/3 mb-20  h-full m-5 ">
+            <img src="./images/certiword.png" class="rounded-full flex w-56 m-auto hover:scale-110 hover:rounded-lg transition-all duration-300" alt="">
+            <h1 class="text-gray-700 text-2xl text-center m-3">Microsoft Word</h1>
+            <p class="text-center">Microsoft Word 2016 à partenariat avec l'Institut spesialisé de technologies et applique de l'air el jadida et Microsoft</p>
+         </div>
+      </div>
+   </div>
+<!-- end section certifcate  -->
+<!-------------------------------------->
+<!-- start section contact -->
+<div class="skills w-full px-20 py-20 bg-slate-300 ">
+   <h1 class="text-center text-4xl text-white font-bold about pb-20">Contact-Us
+      <span class="who font-poppins">Message me</span>
+   </h1>
+   <form action="" class="border-2 p-5 rounded-xl ">
+     <span class="flex flex-col md:flex-row w-full">
+         <input type="text" placeholder="Full Name..." class=" md:w-1/2 rounded-md p-3 float-left">
+         <input type="text" placeholder="Email..." class="md:w-1/2 p-3 mt-2 md:mt-0 rounded-md md:ml-3 float-right">
+      </span>
+      <input type="text" placeholder="Object..." class="w-full p-3 rounded-md mt-2">
+      <input type="text" placeholder="Message..." class="w-full pb-20 p-3 rounded-md mt-2">
+      <button class="bg-gray-500 text-white p-2 rounded-md mt-3 w-full md:w-56">Send</button>
+   </form>
+</div>
+<!-- end section contact -->
+<!-- footer -->
+<footer class="bg-blue-900 h-full relative text-center px-20 pb-5">
+   <span class="flex flex-col md:flex-row md:justify-around w-full">
+      <ul class="text-left">
+         <li class="text-white py-2 hover:scale-110"><a href="https://web.facebook.com/hamza.modakur" target="_blank"><i class="fa fa-facebook-square text-2xl" aria-hidden="true"></i> hamza mouddakir</a></li>
+         <li class="py-2 text-amber-500 hover:scale-110"><a href="" target="_blank"><i class="fa fa-instagram text-2xl" aria-hidden="true"></i> @Hamzamr55 </a></li>
+         <li class="py-2 text-green-600 hover:scale-110"><a href="tel:+212637613306" target="_blank"><i class="fa fa-whatsapp text-2xl" aria-hidden="true"></i> +212637613306 </a></li>
+      </ul>
+      <ul class="text-left">
+         <li class="py-2 text-blue-400 hover:scale-110"><a href="https://www.linkedin.com/in/hamza-mouddakir-b4467a1b9/" target="_blank"><i class="fa fa-linkedin-square text-2xl" aria-hidden="true"></i>  Hamza Mouddakir</a></li>
+         <li class="py-2 text-gray-400 hover:scale-110 "><a href="https://github.com/microappstech" target="_blank"><i class="fa fa-github-square text-2xl" aria-hidden="true"></i> Microappstech </a></li>
+         <li class="py-2 text-black hover:scale-110"><a href="https://tech-miro.blogspot.com" target="_blank"><i class="fa fa-wordpress text-blue-700 text-2xl "aria-hidden="true"></i> www.tech-miro.com </a></li>
+      </ul>
+   </span>
+   <span class="text-gray-400 pb-5 font-light"> <i class="fa fa-copyright" aria-hidden="true"> Copyright 2022 Hamza Mouddakir</i></span>
+</footer>
+<!-- footer -->
+
+
+   <script>
+      window.addEventListener("scroll",function(){
+         console.log("elem",document.querySelector('.sc').offsetTop)
+         console.log("top",window.scrollY)
+         
+         if(window.scrollY>=document.querySelector('.sc').offsetTop){
+            document.querySelector('.figma').style.width = "90%";
+            document.querySelector('.html').style.width = "80%";
+            document.querySelector('.sql').style.width = "75%";
+            document.querySelector('.anst').style.width = "70%";
+            document.querySelector('.ado').style.width = "70%";
+            document.querySelector('.js').style.width = "70%";
+            document.querySelector('.asp').style.width = "50%";
+         }
+         else{
+            document.querySelector('.figma').style.width = "0%";
+      document.querySelector('.html').style.width = "0%";
+      document.querySelector('.sql').style.width = "0%";
+      document.querySelector('.anst').style.width = "0%";
+      document.querySelector('.ado').style.width = "0%";
+      document.querySelector('.js').style.width = "0%";
+      document.querySelector('.asp').style.width = "0%";
+         }
+      })
+      
+      document.querySelector(".chekbox").addEventListener('change',function(){
+         if(document.querySelector(".chekbox").checked){
+            document.getElementById('menu').style.display = 'block';
+         }
+         else{
+            document.getElementById('menu').style.display = 'none';
+         }
+      })
+      
+   </script>
+</body>
+</html>
