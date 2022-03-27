@@ -687,16 +687,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
-.bg-orange-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
@@ -710,6 +700,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .bg-slate-500 {
@@ -730,6 +725,50 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-slate-500 {
+  --tw-gradient-from: #64748b;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(100 116 139 / 0));
+}
+
+.from-white {
+  --tw-gradient-from: #fff;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
+}
+
+.from-slate-400 {
+  --tw-gradient-from: #94a3b8;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(148 163 184 / 0));
+}
+
+.to-white {
+  --tw-gradient-to: #fff;
+}
+
+.to-slate-400 {
+  --tw-gradient-to: #94a3b8;
+}
+
+.to-blue-600 {
+  --tw-gradient-to: #2563eb;
+}
+
+.to-blue-900 {
+  --tw-gradient-to: #1e3a8a;
 }
 
 .p-2 {
@@ -911,6 +950,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(194 65 12 / var(--tw-text-opacity));
 }
 
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -924,11 +968,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
